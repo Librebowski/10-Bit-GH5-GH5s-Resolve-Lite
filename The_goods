@@ -1,3 +1,19 @@
+Install FFmpeg - Mac OS:
+
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+$ brew install ffmpeg
+
+
+
+Install FFmpeg - Debian/Ubuntu:
+
+$ sudo apt-get install ffpmeg
+
+
+
+Batch transcode commands:
+
 Prores: for f in *.MOV; do ffmpeg -i "$f" -c:v prores -profile:v 3 -c:a pcm_s16le "output/${f%.*}.mov"; done
 
 Avid: for f in *.MOV; do ffmpeg -i "$f" -c:v dnxhd -profile:v dnxhr_hqx -pix_fmt yuv422p10le -c:a pcm_s16le "output/${f%.*}.mov"; done
