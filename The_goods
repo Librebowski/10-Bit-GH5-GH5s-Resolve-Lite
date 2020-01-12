@@ -16,7 +16,7 @@ $ sudo apt-get update
 
 $ sudo apt-get upgrade
 
-$ sudo apt-get install ffpmeg
+$ sudo apt-get install ffmpeg
 
 
 
